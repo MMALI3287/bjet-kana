@@ -5,7 +5,7 @@ const info = {
   '/': {
     header: (
       <p className='flex gap-2 items-center flex-1 overflow-hidden '>
-        <span>Welcome to KanaDojo!</span>
+        <span>Welcome to B-JET Kana!</span>
         <i className='text-[var(--secondary-color)] text-xs mt-1.5 max-md:hidden'>
           v0.1.2 (alpha)
         </i>
@@ -14,25 +14,12 @@ const info = {
     content: (
       <>
         <p className='text-lg text-[var(--secondary-color)]'>
-          KanaDojo is a fun, minimalist, aesthetic platform for learning and
+          B-JET Kana is a fun, minimalist, aesthetic platform for learning and
           practicing Japanese online.
         </p>
         <p className='text-lg text-[var(--secondary-color)]'>
-          To begin, select a dojo and start training now!
+          To begin, select a mode and start training now!
         </p>
-        {/*         <p className='text-sm text-[var(--secondary-color)]'>
-          Want to support an independent project built by the community, for the
-          community, and help KanaDojo continue growing? Then please consider
-          donating{' '}
-          <Link
-            href='https://ko-fi.com/kanadojo'
-            target='_blank'
-            className='underline'
-          >
-            here
-          </Link>{' '}
-          - thank you!
-        </p> */}
         <DevNotice />
       </>
     )
