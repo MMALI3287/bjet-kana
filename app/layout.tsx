@@ -2,6 +2,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import ClientLayout from './ClientLayout';
 import './globals.css';
 import { Metadata, Viewport } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'B-JET Kana',
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <body>
         <ClientLayout>{children}</ClientLayout>
+        <Analytics />
       </body>
     </html>
   );
