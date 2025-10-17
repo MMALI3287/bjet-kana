@@ -3,6 +3,7 @@ import ClientLayout from './ClientLayout';
 import './globals.css';
 import { Metadata, Viewport } from 'next';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: 'B-JET Kana',
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body>
         <ClientLayout>{children}</ClientLayout>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
